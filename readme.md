@@ -2,7 +2,7 @@
 
 This project use the API [chucknorris.io](https://api.chucknorris.io/#!).
 
-You can interact with this project using:
+You can interact with this project using: https://pablorodrigo52.github.io/chuck_norris_facts/
 
 ## Functions
 
