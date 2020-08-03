@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Facts</title>
+
+    <link rel="shortcut icon" href="https://assets.chucknorris.host/img/avatar/chuck-norris.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section id="main">
+        <section class="random-fact">
+            <h1 id='random'>
+            </h1>
+            <button id="randomize" onclick='controller.getRandomFact();'>RANDOMIZE</button>
+        </section>
+    </section>
+    <section id="about">
+        <div class='by'>
+            Developed by Pablo Rodrigo. <a href="https://github.com/pablorodrigo52">GitHub</a>
+        </div>
+        <div class="facts">
+            <a href="https://api.chucknorris.io/#!">CHUCKNORRIS.IO</a> is a free JSON API for hand curated Chuck Norris facts. <a href="https://api.chucknorris.io/#!">Check it out.</a> 
+        </div>
+    </section>
+</body>
+    <script src="js/app/service/HttpService.js"></script>
+    <script src="js/app/controller/FactsController.js"></script>
+    <script src="js/app/index.js"></script>
+</html>
