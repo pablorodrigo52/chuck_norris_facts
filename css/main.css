@@ -22,6 +22,7 @@ section.random-fact {
     flex-direction: column;
 }
 h1#random{
+    padding: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 18pt;
     height: 50px;
@@ -46,7 +47,6 @@ section#about {
     flex-direction: column;
     color: white;
 }
-
 section#about a{
     color: orange;
 }
