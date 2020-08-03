@@ -2,6 +2,7 @@
 
 This project use the API [chucknorris.io](https://api.chucknorris.io/#!).
 
+You can interact with this project using: 
 
 ## Functions
 
