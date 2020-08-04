@@ -57,6 +57,7 @@ section#about .facts{
 }
 section#about a{
     color: #ffbf00;
+<<<<<<< HEAD
 }
 
 .generate {
@@ -98,4 +99,6 @@ section#about a{
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
     text-decoration: none;
+=======
+>>>>>>> 5467f93001bc7b315901df737aec613fd70af339
 }
