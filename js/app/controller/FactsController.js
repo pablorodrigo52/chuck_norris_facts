@@ -2,19 +2,17 @@ class FactsController {
 
     constructor(){
         this._service = new HttpService();
-        this._randomLabel = document.querySelector('#random');
+        this._view = new FactsView();
     }
 
     getRandomFact(){
-        this._randomLabel.innerHTML = `<img src="assets/loading2.svg" alt="Loading"><img src="assets/loading2.svg" alt="Loading"><img src="assets/loading2.svg" alt="Loading">`
+        this._view.loading();
         let api = "https://api.chucknorris.io/jokes/random";
         this._service
             .get(api)
             .then(data => {
-                setTimeout(()=>{
-                    this._randomLabel.innerHTML = data.value;
-                    this._randomLabel.setAttribute('data-id', data.id)
-                }, 500);
+                this._view.updateRandomLabel(data);
+                this._view.updateShare(data.value);
             })
             .catch(error => console.log(error));
     }
