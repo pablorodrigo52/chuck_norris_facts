@@ -7,25 +7,36 @@
 
     <link rel="shortcut icon" href="https://assets.chucknorris.host/img/avatar/chuck-norris.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
 </head>
 <body>
     <section id="main">
         <section class="random-fact">
             <h1 id='random'>
             </h1>
-            <button id="randomize" onclick='controller.getRandomFact();'>RANDOMIZE</button>
+            <div class='generate'>
+                <button id="randomize" onclick='controller.getRandomFact();'>RANDOMIZE</button>
+                <i class="fas fa-share-alt">
+                    <ul>
+                        <li>
+                            <a target="_blank" id='twitter' href=""><i class="fab fa-twitter"></i> Twitter</a>
+                        </li>
+                    </ul>
+                </i>
+            </div>
         </section>
-    </section>
-    <section id="about">
-        <div class='by'>
-            Developed by Pablo Rodrigo. <a href="https://github.com/pablorodrigo52">GitHub</a>
-        </div>
-        <div class="facts">
-            <a href="https://api.chucknorris.io/#!">CHUCKNORRIS.IO</a> is a free JSON API for hand curated Chuck Norris facts. <a href="https://api.chucknorris.io/#!">Check it out.</a> 
-        </div>
+        <section id="about">
+            <div class='by'>
+                Developed by Pablo Rodrigo. <a target="_blank" href="https://github.com/pablorodrigo52">GitHub</a>
+            </div>
+            <div class="facts">
+                <a target="_blank" href="https://api.chucknorris.io/#!">CHUCKNORRIS.IO</a> is a free JSON API for hand curated Chuck Norris facts. 
+            </div>
+        </section>
     </section>
 </body>
     <script src="js/app/service/HttpService.js"></script>
+    <script src="js/app/view/FactsView.js"></script>
     <script src="js/app/controller/FactsController.js"></script>
     <script src="js/app/index.js"></script>
 </html>
