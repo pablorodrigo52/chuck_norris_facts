@@ -15,11 +15,14 @@
             <h1 id='random'>
             </h1>
             <div class='generate'>
-                <button id="randomize" onclick='controller.getRandomFact();'>RANDOMIZE</button>
+                <button id="randomize" onclick='controller.getRandomFact();'>Get fact</button>
                 <i class="fas fa-share-alt">
                     <ul>
                         <li>
                             <a target="_blank" id='twitter' href=""><i class="fab fa-twitter"></i> Twitter</a>
+                        </li>
+                        <li>
+                            <a target="_blank" id='facebook' href=""><i class="fab fa-facebook-f"></i> Facebook</a>
                         </li>
                     </ul>
                 </i>
@@ -36,6 +39,7 @@
     </section>
 </body>
     <script src="js/app/service/HttpService.js"></script>
+    <script src="js/app/service/ParamService.js"></script>
     <script src="js/app/view/FactsView.js"></script>
     <script src="js/app/controller/FactsController.js"></script>
     <script src="js/app/index.js"></script>
