@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 body{
@@ -98,4 +99,106 @@ section#about a{
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
     text-decoration: none;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background: #38058B;
+}
+
+section#main{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 30px 0px; */
+    height: 100vh;
+}
+
+section.random-fact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+h1#random{
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    min-height: 50px;
+    text-align: center;
+}
+section.random-fact .generate button{
+        color: rgb(145, 207, 243);
+        background: transparent;
+        border: 0px solid;
+        display: inline-block;
+        padding: 15px;
+        font-size: 13pt;
+        border-radius: 3px;
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
+}
+section.random-fact button:hover{
+    background: #3b3642;
+    transition: .5s ease;
+}
+section#about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+section#about .by,
+section#about .facts{
+    text-align: center;
+}
+section#about a{
+    color: #ffbf00;
+}
+
+.generate {
+    /* display: flex; */
+    /* align-items: baseline; */
+    height: 110px;
+    width: 150px;
+    text-align: center;
+}
+.generate > i {
+    color: rgb(145, 207, 243);
+    margin-left: 20px;
+    display: block;
+    text-align: center;
+    margin: 15px;
+}
+.generate i ul {
+    list-style: none;
+    max-height: 0px;
+    max-width: 0px;
+    padding: 0;
+    background: white;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.generate i:hover ul{
+    max-width: 1000px;
+    max-height: 1000px;
+    transition: .7s all;
+}
+.generate i:hover ul li{
+    padding: 15px;
+}
+.generate i:hover ul li:hover{
+    background: gainsboro;
+    transition: .6s all;
+}
+.generate i:hover ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+>>>>>>> 661b2c8c0c1f87fd7374d904e9145e6699c26783
 }
