@@ -6,6 +6,7 @@ class FactsController {
     }
 
     getRandomFact(){
+        this._view.loading();
         let api = "https://api.chucknorris.io/jokes/random";
         this._service
             .get(api)
@@ -16,6 +17,7 @@ class FactsController {
     }
 
     setFact(data){
+        this._view.loading();
         this._view.updateRandomLabel(data);
     }
 }
