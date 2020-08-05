@@ -8,7 +8,8 @@ You can interact with this project using: https://pablorodrigo52.github.io/chuck
 
 ### Implemented
 - Generate a random fact;
+- Share with friends;
+- Responsive website;
 
 ### Not implemented yet
-- Share with friends;
 - Search by category.
